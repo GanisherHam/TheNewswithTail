@@ -1,5 +1,7 @@
 @media (max-width: 1024px) {
-  .header-list {
+  .header-list,
+  ._dote,
+  .exic {
     display: none;
   }
   .header-list._active {
@@ -30,23 +32,14 @@
       transform: translateX(0%);
     }
   }
-  ._dote,
-  .exic {
-    display: none;
-  }
-  .span-open {
-    display: inline-block;
-  }
-  .span-open {
+  .span-open,
+  ._dote.swip > .exic {
     display: inline-block;
   }
   ._dote.swip {
     background: #ededed;
     display: inline-block;
     height: 187px;
-  }
-  ._dote.swip > .exic {
-    display: inline-block;
   }
 }
 .exit {
