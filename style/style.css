@@ -59,4 +59,7 @@
       transform: translateX(50%);
     }
   }
+  .description {
+    overflow: hidden !important;
+  }
 }
