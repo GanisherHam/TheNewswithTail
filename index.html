@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'mainColor': '#3A3838',
+                'hoverColor': '#EF4423',
+                'text-gray': '#EBEBEB',
+                'text-grayBold': '#686868',
+                'red-bg': '#B71C1C',
+                'violet-bg': '#6A1B9A',
+                'blue-bg': '#303F9F',
+                'green-bg': '#00695C',
+              },
+                fontFamily: {
+                    'sans': ['Roboto', 'sans-serif']
+                },
+                fontSize: {
+                    'link-size':'18px',
+                },
+                maxWidth: {
+                    'ml': '1350px',
+                    'xx': '1120px',
+                    'll': '920px',
+                    'sm': '560px',
+                    'ls': '540px',
+                    'l': '420px',
+                },
+                width: {
+                    'xl': '1120px',
+                    'im': '150px',
+                    'sp': '20px',
+                }
+            },
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>THE NEWS</title>
+</head>
+<body>
+    <header class="pt-5 px-4 relative">
+        <div class="xl:w-xl lg:w-xx w-full right-0 px-4 py-1 mx-auto flex justify-between items-center lg:relative top-0 fixed lg:bg-inherit bg-white/[.7]">
+            <a href="#" class="flex flex-col items-center font-sans font-bold">
+                <img src="images/logo/header-logo.png" alt=""><span class="text-mainColor">THE NEWS WEB</span>
+            </a>
+            <div class="burger lg:hidden flex flex-col gap-y-2">
+                <span class="h-0.5 w-4 bg-black"></span>
+                <span class="h-0.5 w-4 bg-black"></span>
+                <span class="h-0.5 w-4 bg-black"></span>
+            </div>
+            <ul class="header-list lg:flex lg:flex-row gap-8 flex-col">
+                <li class="exit before:content-['X'] before:font-bold before:text-2xl"></li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">СПЕЦПРОЕКТ</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ОБЩЕСТВО</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ТЕХНОЛОГИИ</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ЭКОНОМИКА</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ПОЛИТИКА</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-mainColor text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">СПОРТ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-xx mx-auto llg:mt-4 mt-10">
+            <img src="images/header/header-bg.png" class="w-full" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="grid lg:grid-cols-4 text-text-gray mb-10 sm:grid-cols-2 grid-cols-1">
+            <div class="font-sans flex flex-col">
+                <img src="images/main/main-people.png" class="w-full h-full" alt="">
+                <div class="bg-red-bg px-4 pt-2 pb-4">
+                    <h3 class="mb-2 font-bold text-lg">A Midwestern capital is marching for racial justice — and getting results</h3>
+                    <p class="text-base">Outside of the governor’s mansion in Des Moines, Iowa, on Tuesday evening, Dionna Langford spoke to a crowd of hundreds of protesters with a bullhorn. “Black people,” said Langford, 28, who is African American, “if you have been harassed, terrorized, bullied by the police, in this city, make some...</p>
+                </div>
+            </div>
+            <div class="font-sans flex flex-col">
+                <div class="bg-violet-bg px-4 pt-4 pb-2">
+                    <h3 class="mb-2 font-bold text-lg">Zambian president pardons gay couple sentenced to 15 years</h3>
+                    <p class="text-base">LUSAKA - Zambia's president has pardoned a gay couple sentenced to 15 years in prison in November under colonial-era sodomy laws in a case that caused a diplomatic row with the United States.
+                        Japhet Chataba, 39, and Steven Sambo, 31, were among nearly 3,000 inmates pardoned by...</p>
+                </div>
+                <img src="images/main/main-zambianPre.png" class="w-full h-full" alt="">
+            </div>
+            <div class="font-sans flex flex-col">
+                <img src="images/main/main-walkMan.png" class='w-full h-full' alt="">
+                <div class="bg-blue-bg px-4 pt-2 pb-4">
+                    <h3 class="mb-2 font-bold text-lg">Colin Powell calls Trump a liar, says he skirts the Constitution...</h3>
+                    <p class="text-base">After a week in which President Donald Trump threatened to use military force against protesters, Colin Powell and other retired military leaders blasted the commander-in-chief for taking steps they say will harm the relationship between the military and U.S. citizens...</p>
+                </div>
+            </div>
+            <div class="font-sans flex flex-col">
+                <div class="bg-green-bg px-4 pt-4 pb-2">
+                    <h3 class="mb-2 font-bold text-lg">Is working from home wearing you out? Do this to avoid burnout</h3>
+                    <p class="text-base">Many of us aren't just working from home, we're panic working. Juggling the demands of work and childcare — amid the stress of living through a pandemic, record unemployment and job insecurity— is weighing on us.According to a recent Monster.com survey, 51% of workers said...</p>
+                </div>
+                <img src="images/main/mian-workWoman.png" class="w-full h-full" alt="">
+            </div>
+        </section>
+        <div class="flex justify-center">
+            <h1 class="mb-10 font-sans font-bold text-2xl">Главные новости</h1>
+        </div>
+        <section class="w-full bg-text-gray mb-12 flex justify-center">
+            <div class="w-xl flex lg:gap-x-6 lg:px-0 px-4 flex-wrap justify-center">
+                <img src="images/main/main-section_bg.png" class="w-sm" alt="">
+                <div class="">
+                    <h2 class="font-sans font-bold text-2xl mb-7 mt-4 lg:text-left text-center">Обзор молодежных планшетов:<br> лучшие устройства за свои деньги</h2>
+                    <p class="description font-sans font-normal text-link-size text-text-grayBold max-w-ls mb-7 lg:text-left text-center lg:h-full h-80">Серия Huawei MediaPad давно известна покупателям - это одни из самых продаваемых Android-планшетов на рынке. Однако в компании решили провести ребрендинг, и модели MediaPad стали частью флагманской линейки Huawei MatePad, получили передовые функции, но при этом сохранили доступную цену.
+                    В июне в России появятся два новых планшета: компактный MatePad T8 с диагональю 8 дюймов и MatePad с экраном 10,4 дюйма. Последний уже доступен по предзаказу с завтрашнего числа на сайте бренда. Модель ориентирована на молодых специалистов, студентов, семьи с детьми, которым нужно отличное устройство по привлекательной цене. Давайте разберемся, почему Huawei<span class="span-open font-bold text-2xl">...</span> <span class="_dote font-sans font-normal text-link-size text-text-grayBold max-w-ls mb-7 lg:text-left text-center lg:h-full h-80">MatePad является одним из лучших предложений на рынке. Huawei MatePad выполнен из стекловолокна и поликарбоната: для прочности корпус имеет алюминиевую рамку. При диагонали экрана в 10,4 дюйма планшет весит всего 450 г и его толщина составляет 7,35 мм. Для сравнения Huawei MediaPad M5 Lite весил 475 г, его диагональ была меньше - 10,1 дюйма, а толщина составляла 7,7 мм...<span class="exic font-bold text-2xl">X</span></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-mainColor py-7">
+        <div class="xl:w-xl lg:w-xx mx-auto flex flex-wrap items-center lg:justify-between justify-center px-4 gap-x-4 gap-y-2">
+            <a href="#" class="font-sans font-bold flex flex-col items-center">
+                <img src="images/logo/header-logo.png" alt="" class="w-im"><span class="text-white">THE NEWS WEB</span>
+            </a>
+            <ul class="flex lg:gap-x-8 gap-x-3 gap-y-2 flex-wrap justify-center">
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">СПЕЦПРОЕКТ</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ОБЩЕСТВО</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ТЕХНОЛОГИИ</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ЭКОНОМИКА</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">ПОЛИТИКА</a>
+                </li>
+                <li>
+                    <a href="#" class="font-sans text-white text-link-size font-bold hover:text-hoverColor hover:duration-300 duration-300">СПОРТ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
